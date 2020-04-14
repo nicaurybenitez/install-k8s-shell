@@ -1,10 +1,10 @@
-# 此脚本用来安装master节点，用于平时的实验环境
+# Este script se utiliza para instalar el nodo master y Nodos tipo Workers , para el entorno Devs habitual
 
-+ install-k8s-master.sh 主脚本，运行这个脚本就行了
-+ k8s-master-certs.sh   生成证书文件
-+ k8s-master-config.sh  生成k8s-master所有的配置文件
++ install-k8s-master.sh Script principal, simplemente comprime todos los elementos necesarios para  el nodo master
++ k8s-master-certs.sh   Este Script Genera los certificados necesarios para nuestro cluster
++ k8s-master-config.sh  Este script genera todos los roles y configuraciones necesarias para el nodo master
 
-安装好etcd之后运行 install-k8s-master.sh 脚本
+# Primero debe Instalar etcd y luego proceder a ejecutar install-k8s-master.sh
 
 ```console
 sh install-k8s-master.sh kubernetes-server-linux-amd64.tar.gz k8s-master
