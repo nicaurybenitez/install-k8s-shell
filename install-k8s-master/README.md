@@ -22,36 +22,33 @@ wget https://github.com/coreos/etcd/releases/download/v3.2.26/etcd-v3.2.26-linux
 The next steps will get the kube's database/state store working and show it in action.
 
 1. Download and extract etcd and etcdctl:
-
-    ```bash
+```console
     wget https://github.com/etcd-io/etcd/releases/download/v3.2.26/etcd-v3.2.26-linux-amd64.tar.gz
     tar -xzf etcd-v3.2.26-linux-amd64.tar.gz
-    ```
+```
 
 2. Instalar etcd y los binarios de etcdctl:
-
-    ```bash
+```console
     mv etcd-v3.2.26-linux-amd64/etcd /usr/bin/etcd
     mv etcd-v3.2.26-linux-amd64/etcdctl /usr/bin/etcdctl
-    ```
+```
 
 3. Borrar recursos .tar.gz:
 
 ```console
     rm -rf etcd-v3.2.26-linux-amd64 etcd-v3.2.26-linux-amd64.tar.gz
-    ```
+```
 
 4.Iniciar etcd:
-
 ```console
     etcd --listen-client-urls http://0.0.0.0:2379 --advertise-client-urls http://localhost:2379 &> /etc/kubernetes/etcd.log &
-    ```
+```
 
 5.verifiacar si todo esta correcto con etcdctl:
 
 ```console
     etcdctl cluster-health
-    ```
+```
 
 ### Luego de instalar etcd proceda a ejecutar install-k8s-master.sh
 
