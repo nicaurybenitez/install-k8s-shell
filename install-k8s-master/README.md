@@ -37,19 +37,19 @@ The next steps will get the kube's database/state store working and show it in a
 
 3. Borrar recursos .tar.gz:
 
-    ```bash
+```console
     rm -rf etcd-v3.2.26-linux-amd64 etcd-v3.2.26-linux-amd64.tar.gz
     ```
 
 4.Iniciar etcd:
 
-    ```bash
+```console
     etcd --listen-client-urls http://0.0.0.0:2379 --advertise-client-urls http://localhost:2379 &> /etc/kubernetes/etcd.log &
     ```
 
 5.verifiacar si todo esta correcto con etcdctl:
 
-    ```bash
+```console
     etcdctl cluster-health
     ```
 
