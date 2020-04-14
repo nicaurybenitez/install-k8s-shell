@@ -1,4 +1,4 @@
-### Estos scripts se utilizan para instalar el nodo master y los nodos tipo workers del cluster de kubernestes
+### Procedimiento y scripts que se utilizan para instalar el nodo master y los nodos tipo workers del cluster de kubernestes
 
 + install-k8s-master.sh Este scrip, simplemente comprime todos los elementos necesarios para el nodo master
 + k8s-master-certs.sh   Este script Genera los certificados necesarios para nuestro cluster
