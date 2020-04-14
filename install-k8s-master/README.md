@@ -31,6 +31,7 @@ MemoryAccounting=true
 -A INPUT -p tcp --dport 2380 --jump ACCEPT
 -A INPUT -p tcp --dport 2379 --jump ACCEPT
 -A INPUT -p tcp --dport 6343 --jump ACCEPT
+-A INPUT -p tcp --dport 4001 --jump ACCEPT
 #SSH                                                                                                                                                                                    
 -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
 
