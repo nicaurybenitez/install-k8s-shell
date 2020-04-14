@@ -6,7 +6,10 @@
 
 ### Requerimientos previos en los en el nodo master y en los nodos workers 
 
-- Crear un archivo para permitir cgroups 
+
+
+
+- Crear un archivo para permitir cgroups (aplicar esto en todos los nodos)
 - Agregar el archivo en  : /etc/systemd/system/kubelet.service.d/11-cgroups.conf
 
 ### Debe contener:
