@@ -2,7 +2,7 @@
 
 + install-k8s-master.sh Este scrip, simplemente comprime todos los elementos necesarios para el nodo master
 + k8s-master-certs.sh   Este script Genera los certificados necesarios para nuestro cluster
-+ k8s-master-config.sh  Este script genera todos los roles y configuraciones necesarias para el nodo master
++ k8s-master-config.sh  Este script genera todos los roles y configuraciones necesarias para el nodo master y los workes
 
 ### Primero debe Instalar etcd y luego proceder a ejecutar install-k8s-master.sh
 
