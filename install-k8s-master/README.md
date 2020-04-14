@@ -4,6 +4,26 @@
 + k8s-master-certs.sh   Este script Genera los certificados necesarios para nuestro cluster
 + k8s-master-config.sh  Este script genera todos los roles y configuraciones necesarias para el nodo master y los workes
 
+## Por favor descargue
+
+- Kubernetes server - v1.15.11 - [url](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.15.md#v1100)
+
+```console
+wget https://dl.k8s.io/v1.15.11/kubernetes-client-linux-amd64.tar.gz
+```
+
+- Etcd server - v3.2.18 - [url](https://github.com/coreos/etcd/releases/tag/v3.2.18)
+
+```console
+wget https://github.com/coreos/etcd/releases/download/v3.2.18/etcd-v3.2.18-linux-amd64.tar.gz
+```
+
+- Flanneld server - v0.10.0 - [url](https://github.com/coreos/flannel/releases/tag/v0.10.0)
+
+```console
+wget https://github.com/coreos/flannel/releases/download/v0.10.0/flannel-v0.10.0-linux-amd64.tar.gz
+
+
 ### Primero debe Instalar etcd y luego proceder a ejecutar install-k8s-master.sh
 
 ```console
