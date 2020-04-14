@@ -4,7 +4,7 @@
 + k8s-master-certs.sh   Este script Genera los certificados necesarios para nuestro cluster
 + k8s-master-config.sh  Este script genera todos los roles y configuraciones necesarias para el nodo master y los workes
 
-### Por favor descargue
+### Por favor descargue en el nodo master
 
 - Kubernetes server - v1.15.11 - [url](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.15.md#v1100)
 
