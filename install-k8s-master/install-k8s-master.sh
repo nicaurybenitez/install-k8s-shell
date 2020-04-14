@@ -44,9 +44,9 @@ bash $CURRENT_DIR/$CONFIG_SCRIPT
 
 
 
-useradd -r kube
+useradd -r root
 mkdir /var/run/kubernetes -pv
-chown kube.kube /var/run/kubernetes
+chown root:root /var/run/kubernetes
 
 
 # create token file
