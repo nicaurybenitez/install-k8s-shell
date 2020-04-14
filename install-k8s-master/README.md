@@ -18,11 +18,6 @@ wget https://dl.k8s.io/v1.15.11/kubernetes-client-linux-amd64.tar.gz
 wget https://github.com/coreos/etcd/releases/download/v3.2.18/etcd-v3.2.18-linux-amd64.tar.gz
 ```
 
-- Flanneld server - v0.10.0 - [url](https://github.com/coreos/flannel/releases/tag/v0.10.0)
-```console
-wget https://github.com/coreos/flannel/releases/download/v0.10.0/flannel-v0.10.0-linux-amd64.tar.gz
-```
-
 ### Luego de instalar etcd proceda a ejecutar install-k8s-master.sh
 
 ```console
