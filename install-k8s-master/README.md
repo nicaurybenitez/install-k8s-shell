@@ -44,7 +44,7 @@ MemoryAccounting=true
 - Kubernetes server - v1.15.11 - [url](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.15.md#v1100)
 
 ```console
-wget https://dl.k8s.io/v1.15.11/kubernetes-client-linux-amd64.tar.gz
+wget https://dl.k8s.io/v1.15.11/kubernetes-server-linux-amd64.tar.gz
 ```
 
 - Etcd server - v3.2.26 - [url](https://github.com/coreos/etcd/releases/tag/v3.2.26)
