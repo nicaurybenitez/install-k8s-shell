@@ -17,7 +17,7 @@ wget https://dl.k8s.io/v1.15.11/kubernetes-client-linux-amd64.tar.gz
 ```console
 wget https://github.com/coreos/etcd/releases/download/v3.2.26/etcd-v3.2.26-linux-amd64.tar.gz
 ```
-##  Configurar etcd
+###  Configurar etcd
 
 The next steps will get the kube's database/state store working and show it in action.
 
