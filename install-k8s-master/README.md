@@ -21,9 +21,9 @@ wget https://github.com/coreos/etcd/releases/download/v3.2.18/etcd-v3.2.18-linux
 - Flanneld server - v0.10.0 - [url](https://github.com/coreos/flannel/releases/tag/v0.10.0)
 ```console
 wget https://github.com/coreos/flannel/releases/download/v0.10.0/flannel-v0.10.0-linux-amd64.tar.gz
+```
 
-
-### Primero debe Instalar etcd y luego proceder a ejecutar install-k8s-master.sh
+### Luego de instalar etcd proceda a ejecutar install-k8s-master.sh
 
 ```console
 sh install-k8s-master.sh kubernetes-server-linux-amd64.tar.gz k8s-master
