@@ -54,7 +54,7 @@ wget https://github.com/coreos/etcd/releases/download/v3.2.26/etcd-v3.2.26-linux
 ```
 ###  Configurar etcd
 
-The next steps will get the kube's database/state store working and show it in action.
+Los siguientes pasos harán que la base de etcd del kube funcione.
 
 1. Download and extract etcd and etcdctl:
 ```console
@@ -64,8 +64,8 @@ The next steps will get the kube's database/state store working and show it in a
 
 2. Instalar etcd y los binarios de etcdctl:
 ```console
-    mv etcd-v3.2.26-linux-amd64/etcd /usr/bin/etcd
-    mv etcd-v3.2.26-linux-amd64/etcdctl /usr/bin/etcdctl
+    mv etcd-v3.2.26-linux-amd64/etcd /usr/local/bin/etcd
+    mv etcd-v3.2.26-linux-amd64/etcdctl /usr/local/bin/etcdctl
 ```
 
 3. Borrar recursos .tar.gz:
@@ -76,7 +76,7 @@ The next steps will get the kube's database/state store working and show it in a
 
 4.Iniciar etcd:
 ```console
-    etcd --listen-client-urls http://0.0.0.0:2379 --advertise-client-urls http://localhost:2379 &> /etc/kubernetes/etcd.log &
+    etcd --listen-client-urls http://0.0.0.0:2379 --advertise-client-urls http://k8s-master:2379 &> /etc/kubernetes/etcd.log &
 ```
 
 5.verifiacar si todo esta correcto con etcdctl:
