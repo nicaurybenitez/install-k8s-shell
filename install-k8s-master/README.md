@@ -22,7 +22,7 @@
 CPUAccounting=true
 MemoryAccounting=true
 ```
-- Agregar las siguientes reglas en dorna-firewall/rules.d en nodo master y workers
+- Agregar las siguientes reglas en /etc/dorna-firewall/rules.d/010-dorna-essential en nodo master y workers
 
 ```console
 -A INPUT -p icmp -j ACCEPT
