@@ -6,8 +6,11 @@
 
 ### Requerimientos previos en los en el nodo master y en los nodos workers 
 
+- Usando esta configuración por defecto de Kubernetes, kubelet no se inicia si el sistema en los nodos master, o workers  tiene el swap activado. Para desactivar el swap en el host, por favor editar  /etc/fstab y elimina (o comenta) la línea de swap.
 
-
+```console
+ swapoff -a
+```
 
 - Crear un archivo para permitir cgroups (aplicar esto en todos los nodos)
 - Agregar el archivo en  : /etc/systemd/system/kubelet.service.d/11-cgroups.conf
