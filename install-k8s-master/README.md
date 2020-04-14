@@ -4,6 +4,20 @@
 + k8s-master-certs.sh   Este script Genera los certificados necesarios para nuestro cluster
 + k8s-master-config.sh  Este script genera todos los roles y configuraciones necesarias para el nodo master y los workes
 
+### Requerimientos previos en los en el nodo master y en los nodos workers 
+
+- Crear un archivo para permitir cgroups 
+- Agregar el archivo en  : /etc/systemd/system/kubelet.service.d/11-cgroups.conf
+
+### Debe contener:
+
+```console
+[Service]
+CPUAccounting=true
+MemoryAccounting=true
+```
+
+
 ### Por favor descargue en el nodo master
 
 - Kubernetes server - v1.15.11 - [url](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.15.md#v1100)
