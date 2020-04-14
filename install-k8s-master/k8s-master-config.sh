@@ -112,7 +112,7 @@ Documentation=https://github.com/GoogleCloudPlatform/kubernetes
 EnvironmentFile=-/etc/kubernetes/config
 EnvironmentFile=-/etc/kubernetes/controller-manager
 User=kube
-ExecStart=/usr/local/kubernetes/kube-controller-manager \\
+ExecStart=/usr/local/bin/kube-controller-manager \\
         \$KUBE_LOGTOSTDERR \\
         \$KUBE_LOG_LEVEL \\
         \$KUBE_MASTER \\
@@ -158,7 +158,7 @@ Documentation=https://github.com/GoogleCloudPlatform/kubernetes
 EnvironmentFile=-/etc/kubernetes/config
 EnvironmentFile=-/etc/kubernetes/scheduler
 User=kube
-ExecStart=/usr/local/kubernetes/kube-scheduler \\
+ExecStart=/usr/local/bin/kube-scheduler \\
         \$KUBE_LOGTOSTDERR \\
         \$KUBE_LOG_LEVEL \\
         \$KUBE_MASTER \\
