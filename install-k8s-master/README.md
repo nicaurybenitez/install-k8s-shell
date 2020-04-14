@@ -22,9 +22,23 @@
 CPUAccounting=true
 MemoryAccounting=true
 ```
+- Agregar las siguientes reglas en dorna-firewall/rules.d en nodo master y workers
 
+```console
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp --dport 2380 --jump ACCEPT
+-A INPUT -p tcp --dport 2379 --jump ACCEPT
+-A INPUT -p tcp --dport 6343 --jump ACCEPT
+#SSH                                                                                                                                                                                    
+-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+
+```
 
 ### Por favor descargue en el nodo master
+
+- Nuestro WORKDIR es /opt/ descargar los siguientes binarios:
 
 - Kubernetes server - v1.15.11 - [url](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.15.md#v1100)
 
