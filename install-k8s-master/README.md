@@ -38,7 +38,7 @@ MemoryAccounting=true
 
 ### Por favor descargue en el nodo master
 
-- Nuestro WORKDIR es /opt/ descargar los siguientes binarios:
+- Nuestro WORKDIR es /opt/ descargar los siguientes binarios y clone el repositorio con los script de configuración:
 
 - Kubernetes server - v1.15.11 - [url](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.15.md#v1100)
 
